@@ -12,7 +12,7 @@ import {
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
-import { Loader2, Plant } from 'lucide-react';
+import { Loader2, Sprout } from 'lucide-react';
 import { toast } from 'sonner';
 import ResultCard from '@/components/ResultCard';
 import { z } from 'zod';
@@ -313,7 +313,7 @@ const CropManagement = () => {
               <div className="space-y-4">
                 <ResultCard title="Crop Recommendations">
                   <div className="flex items-center mb-3">
-                    <Plant className="h-5 w-5 text-primary mr-2" />
+                    <Sprout className="h-5 w-5 text-primary mr-2" />
                     <h4 className="font-semibold text-gray-800">Recommended Crops</h4>
                   </div>
                   <div className="flex flex-wrap gap-2 mb-4">
@@ -355,7 +355,7 @@ const CropManagement = () => {
             ) : (
               <div className="h-full flex items-center justify-center border-2 border-dashed border-gray-200 rounded-lg p-8 bg-gray-50">
                 <div className="text-center">
-                  <Plant className="h-12 w-12 text-gray-400 mx-auto mb-3" />
+                  <Sprout className="h-12 w-12 text-gray-400 mx-auto mb-3" />
                   <h3 className="text-lg font-medium text-gray-600 mb-1">No Data Yet</h3>
                   <p className="text-gray-500">
                     Fill out the form and submit to see AI-powered crop recommendations

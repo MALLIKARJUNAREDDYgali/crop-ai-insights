@@ -1,6 +1,6 @@
 
 import { useNavigate } from 'react-router-dom';
-import { Crop, Fertilizer, Virus } from 'lucide-react';
+import { Sprout, Droplet, Bug } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import FeatureCard from '@/components/FeatureCard';
 
@@ -56,17 +56,17 @@ const Home = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <FeatureCard 
-              icon={Crop}
+              icon={Sprout}
               title="Crop Management"
               description="Get personalized recommendations for crop selection and management based on your specific soil conditions, climate, and other environmental factors."
             />
             <FeatureCard 
-              icon={Fertilizer}
+              icon={Droplet}
               title="Fertilizer Recommendations"
               description="Receive precise fertilizer recommendations tailored to your crop's needs, soil nutrient levels, and growth stage to optimize yield and reduce waste."
             />
             <FeatureCard 
-              icon={Virus}
+              icon={Bug}
               title="Disease Diagnosis"
               description="Quickly identify plant diseases through image recognition technology and get effective treatment recommendations to protect your crops."
             />

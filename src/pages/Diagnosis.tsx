@@ -1,8 +1,7 @@
-
 import { useState, useCallback } from 'react';
 import { useDropzone } from 'react-dropzone';
 import { Button } from '@/components/ui/button';
-import { Loader2, Upload, Virus } from 'lucide-react';
+import { Loader2, Upload, Bug } from 'lucide-react';
 import { toast } from 'sonner';
 import ResultCard from '@/components/ResultCard';
 import { Card } from '@/components/ui/card';
@@ -233,7 +232,7 @@ const Diagnosis = () => {
                 <ResultCard title="Diagnosis Result">
                   <div className="mb-4">
                     <div className="flex items-center mb-3">
-                      <Virus className="h-5 w-5 text-red-500 mr-2" />
+                      <Bug className="h-5 w-5 text-red-500 mr-2" />
                       <h3 className="font-semibold text-lg text-gray-800">{result.diseaseName}</h3>
                     </div>
                     <div className="mb-4">
@@ -273,7 +272,7 @@ const Diagnosis = () => {
             ) : (
               <div className="h-full flex items-center justify-center border-2 border-dashed border-gray-200 rounded-lg p-8 bg-gray-50">
                 <div className="text-center">
-                  <Virus className="h-12 w-12 text-gray-400 mx-auto mb-3" />
+                  <Bug className="h-12 w-12 text-gray-400 mx-auto mb-3" />
                   <h3 className="text-lg font-medium text-gray-600 mb-1">No Diagnosis Yet</h3>
                   <p className="text-gray-500">
                     Upload a clear image of the affected plant part to get disease diagnosis and treatment recommendations

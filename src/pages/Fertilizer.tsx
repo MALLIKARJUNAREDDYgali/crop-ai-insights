@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { 
@@ -12,7 +11,7 @@ import {
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
-import { Loader2, Fertilizer as FertilizerIcon, Check } from 'lucide-react';
+import { Loader2, Droplet } from 'lucide-react';
 import { toast } from 'sonner';
 import ResultCard from '@/components/ResultCard';
 import { z } from 'zod';
@@ -372,7 +371,7 @@ const Fertilizer = () => {
               <div className="space-y-4">
                 <ResultCard title="Fertilizer Recommendation">
                   <div className="flex items-center mb-4">
-                    <FertilizerIcon className="h-5 w-5 text-primary mr-2" />
+                    <Droplet className="h-5 w-5 text-primary mr-2" />
                     <h3 className="font-semibold text-lg">{result.recommendedFertilizer}</h3>
                   </div>
                   
@@ -442,7 +441,7 @@ const Fertilizer = () => {
             ) : (
               <div className="h-full flex items-center justify-center border-2 border-dashed border-gray-200 rounded-lg p-8 bg-gray-50">
                 <div className="text-center">
-                  <FertilizerIcon className="h-12 w-12 text-gray-400 mx-auto mb-3" />
+                  <Droplet className="h-12 w-12 text-gray-400 mx-auto mb-3" />
                   <h3 className="text-lg font-medium text-gray-600 mb-1">No Data Yet</h3>
                   <p className="text-gray-500">
                     Fill out the form to get tailored fertilizer recommendations for your crops
