@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { 
@@ -11,7 +12,7 @@ import {
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
-import { Loader2, Droplet } from 'lucide-react';
+import { Loader2, Droplet, Check } from 'lucide-react';
 import { toast } from 'sonner';
 import ResultCard from '@/components/ResultCard';
 import { z } from 'zod';
